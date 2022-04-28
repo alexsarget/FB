@@ -45,7 +45,7 @@ describe("Test Para ExplorerService",()=>{
       expect(Fizz.trick).toBe("BUZZ")
     });
     test("Ejercicio 2 Requerimiento 4: Validad si el Explorer tiene un score divisible en 3 y 5, de ser asi añadir FIZZBUZZ",()=>{
-      const explorer15 = {name: "Explorer15", score: 15}
+      const explorer15 = {name: "Explorer15", score: 14}
       const Fizz=FizzbuzzService.applyValidationInExplorer(explorer15)
       expect(Fizz.trick).toBe("FIZZBUZZ")
     });
