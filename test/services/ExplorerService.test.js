@@ -27,7 +27,7 @@ describe("Test Para ExplorerService",()=>{
                 }];
         const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
         const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-        expect(usernamesInNode).toContain("ajolonauta1");
+        expect(usernamesInNode).toContain("ajolonauta2");
     });
     test("Ejercicio 2 Requerimiento 1: Obtener validación de explorers con score divisble en 3 y trick Fizz",()=>{
         const explorer1 = {name: "Explorer1", score: 1};
