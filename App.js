@@ -1,3 +1,5 @@
+const Reader=require("./lib/utils/Reader.js")
+const ExplorerService=require("./lib/services/ExplorerServices.js")
 const fs = require("fs");
 
 // Part 1 Read json file ===========================
@@ -11,7 +13,27 @@ const explorersInNode = explorers.filter((explorer) => explorer.mission == "node
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-//console.log(usernamesInNode)
+console.log(usernamesInNode)
+console.log(typeof(usernamesInNode))
+
+const result=[
+            {
+              name: 'Woopa1',
+              githubUsername: 'ajolonauta1',
+              score: 1,
+              mission: 'node',
+              stacks: [ 'javascript', 'reasonML', 'elm' ]
+            },
+            {
+              name: 'Woopa2',
+              githubUsername: 'ajolonauta2',
+              score: 2,
+              mission: 'node',
+              stacks: [ 'javascript', 'groovy', 'elm' ]
+            }];
+
+console.log(result.githubUsername)
+console.log(typeof(result))
 
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 
