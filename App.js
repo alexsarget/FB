@@ -16,24 +16,6 @@ const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer
 console.log(usernamesInNode)
 console.log(typeof(usernamesInNode))
 
-const result=[
-            {
-              name: 'Woopa1',
-              githubUsername: 'ajolonauta1',
-              score: 1,
-              mission: 'node',
-              stacks: [ 'javascript', 'reasonML', 'elm' ]
-            },
-            {
-              name: 'Woopa2',
-              githubUsername: 'ajolonauta2',
-              score: 2,
-              mission: 'node',
-              stacks: [ 'javascript', 'groovy', 'elm' ]
-            }];
-
-console.log(result.githubUsername)
-console.log(typeof(result))
 
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 

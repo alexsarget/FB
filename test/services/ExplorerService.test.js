@@ -24,24 +24,8 @@ describe("Test Para ExplorerService",()=>{
                   mission: 'node',
                   stacks: [ 'javascript', 'groovy', 'elm' ]
                 }];
-        const result=
-        [
-            {
-              name: 'Woopa1',
-              githubUsername: 'ajolonauta1',
-              score: 1,
-              mission: 'node',
-              stacks: [ 'javascript', 'reasonML', 'elm' ]
-            },
-            {
-              name: 'Woopa2',
-              githubUsername: 'ajolonauta2',
-              score: 2,
-              mission: 'node',
-              stacks: [ 'javascript', 'groovy', 'elm' ]
-            }];
         const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
         const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-        expect(usernamesInNode).toBe(result.githubUsername);
+        expect(usernamesInNode).toContain("ajolonauta1","ajolonauta2","ajolonauta3");
     })
 })
