@@ -14,7 +14,8 @@ const explorerInNode=ExplorerService.filterByMission(explorers, "node")
 console.log(explorerInNode)
 
 //parte 2 Explorer Service
-
+const explorerInNodeAmount=ExplorerService.getAmountOfExplorersByMission(explorers, "node")
+console.log("Hay "+explorerInNodeAmount+" explorers que estan la mision node")
 
 //Parte 3 Explorer Service
 const explorerByUser=ExplorerService.getExplorersUsernamesByMission(explorers, "node")
